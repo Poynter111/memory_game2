@@ -1,25 +1,40 @@
 
-var cards = ["queen", "queen", "king", "king"];
+var cards = ["Queen", "Queen", "King", "King"];
 var cardsInPlay = [];
-var cardOne = cards[0];
-cardsInPlay.push(cardOne);
-var cardTwo = cards[1];
-cardsInPlay.push(cardTwo);
-console.log("User flipped " + cardOne);
-console.log("User flipped " + cardTwo);
-if (cardsInPlay.length === 2) {
-if (cardsInPlay[0] === cardsInPlay[1]) {
+
+var checkForMatch = function () {
+	if (cardsInPlay[0] === cardsInPlay[1]) {
 	alert("You found a Match");
 } else {
-	alert("Sorry, try again");
+	alert("Sorry, try again");};
 };
+
+var flipcard = function (cardId) {
+
+cardsInPlay.push(cards[cardId]);
+if (cardsInPlay.length === 2) {
+	checkForMatch();
+};
+console.log("User flipped " + cards[cardId]);
+
 };
 
 
 
+flipcard(3);
+flipcard(0);
 
 
 
+
+
+//console.log("User flipped " + cardOne);
+//console.log("User flipped " + cardTwo);
+
+//var cardTwo = cards[1];
+//cardsInPlay.push(cardTwo);
+//var cardOne = cards[0];
+//cardsInPlay.push(cardOne);
 
 //if (temp > 70) {
 //console.log("It is hot outside!");

@@ -14,7 +14,7 @@ var flipcard = function (cardId) {
 	console.log(cards[cardId].cardImage);
 	console.log(cards[cardId].suit);
 createBoard(); */
-//----------------------------------------------
+//---------------------START OF WORKING CODE--------------------------------------------------
 console.log("Up and running!");
 var cards = [
    {
@@ -70,6 +70,8 @@ console.log(cardsInPlay);
 };
 
 createBoard();
+
+//---------------------END OF WORKING CODE--------------------------------------------------
 //console.log("User flipped " + cardOne);
 //console.log("User flipped " + cardTwo);
 
